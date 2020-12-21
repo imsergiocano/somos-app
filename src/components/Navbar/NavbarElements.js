@@ -71,7 +71,8 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-    font-size: 11px;
+    letter-spacing: 1.54px;
+    font-size: 13px;
     height: 80px;
 `
 
@@ -85,7 +86,7 @@ export const NavLink = styled(LinkS)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #6573FF;
     }
 `
 
@@ -98,19 +99,20 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkR)`
+    letter-spacing: 1.54px;
     border-radius: 50px;
-    background: #01bf71;
+    background: #6573FF;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #000;
-    font-size: 16px;
+    color: #fff;
+    font-size: 14px;
     outline: none;
-    coursor: pointer;
+    cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: #fff;
+        color: #000;
     }
 `

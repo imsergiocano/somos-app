@@ -5,7 +5,7 @@ export const InfoContainer = styled.div`
     background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
     @media screen and (max-width: 768px){
-        padding 100px 0;
+        padding: 100px 0;
     }
 `;
 
@@ -14,7 +14,7 @@ export const InfoWrapper = styled.div`
     z-index: 1;
     height: 860px;
     width: 100%;
-    max-widht: 1100px;
+    max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
@@ -49,9 +49,8 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #01bf71;
+    color: #6573FF;
     font-size: 26px;
-    line-lenght: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
@@ -62,7 +61,6 @@ export const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: 49px;
     line-height: 1.1;
-    line weight: 600;
     color: ${({ lightText }) => ( lightText ? '#f7f8fa' : '#010606' )};
 
     @media screen and (max-width: 480){
