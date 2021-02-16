@@ -35,10 +35,10 @@ const Navbar = ({ toggle }) => {
     };
 
     return (
-        <IconContext.Provider value={{ color: '#fff'}}>
+        <IconContext.Provider value={{ color: '#050505'}}>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to='/' onClick={toggleHome}> somos</NavLogo>
+                    <NavLogo to='/' onClick={toggleHome}> somos.</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
@@ -51,7 +51,7 @@ const Navbar = ({ toggle }) => {
                                 spy={true} 
                                 exact='true' 
                                 offset={-80} 
-                            >ABOUT</NavLink>
+                            >Nosotros</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink 
@@ -61,7 +61,7 @@ const Navbar = ({ toggle }) => {
                             spy={true} 
                             exact='true' 
                             offset={-80} 
-                            >DISCOVER</NavLink>
+                            >Descubre</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink 
@@ -71,7 +71,7 @@ const Navbar = ({ toggle }) => {
                             spy={true} 
                             exact='true' 
                             offset={-80} 
-                            >SERVICES</NavLink>
+                            >Servicios</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink 
@@ -81,12 +81,12 @@ const Navbar = ({ toggle }) => {
                             spy={true} 
                             exact='true' 
                             offset={-80}  
-                            >SIGN UP</NavLink>
+                            >Registro</NavLink>
                         </NavItem>
                         
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+                        <NavBtnLink to='/signin'>Ingresar</NavBtnLink>
                     </NavBtn>
 
                 </NavbarContainer>

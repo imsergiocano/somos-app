@@ -12,14 +12,14 @@ const HeroSection = () => {
 
     return(
         <HeroContainer id="home">
-            <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
-            </HeroBg>
             <HeroContent>
-                <HeroH1>Virtual trainning made easy</HeroH1>
-                <HeroP>
-                    Sign up for a new account today and receive $250 in credit toward your next payment.
-                </HeroP>
+                <HeroP>Tus planes hacen posibles las metas.</HeroP>
+                <HeroH1>
+                planes
+                </HeroH1>
+                <HeroH1>
+                &metas
+                </HeroH1>
                 <HeroBtnWrapper>
                     <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}
                         primary="true" 
