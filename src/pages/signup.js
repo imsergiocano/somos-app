@@ -1,16 +1,16 @@
 import React from 'react'
 import ScrollToTop from '../components/ScrollToTop';
-import SignIn from '../components/SignIn';
+import SignUp from '../components/SignUp';
 import useToken from '../components/useToken';
 
-const SigninPage = () => {
+const SignupPage = () => {
     const { token, setToken } = useToken();
     return (
         <>
             <ScrollToTop/>
-            <SignIn setToken ={setToken}/>
+            <SignUp setToken ={setToken}/>
         </>
     )
 }
 
-export default SigninPage;
+export default SignupPage;

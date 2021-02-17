@@ -51,7 +51,7 @@ const Navbar = ({ toggle }) => {
                                 spy={true} 
                                 exact='true' 
                                 offset={-80} 
-                            >Nosotros</NavLink>
+                            >Características</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink 
@@ -81,12 +81,12 @@ const Navbar = ({ toggle }) => {
                             spy={true} 
                             exact='true' 
                             offset={-80}  
-                            >Registro</NavLink>
+                            >Regístrate</NavLink>
                         </NavItem>
                         
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='/signin'>Ingresar</NavBtnLink>
+                        <NavBtnLink to='/signin'>Iniciar sesión</NavBtnLink>
                     </NavBtn>
 
                 </NavbarContainer>

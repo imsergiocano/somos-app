@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroBtnWrapper, HeroH1, HeroP, ArrowRight, ArrowForward } from './HeroElements';
-import Video from '../../videos/Video.mp4'
+import { HeroContainer, HeroContent, HeroBtnWrapper, HeroH1, HeroP, ArrowRight, ArrowForward } from './HeroElements';
 import {Button} from '../ButtonElement'
 
 const HeroSection = () => {
