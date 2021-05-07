@@ -1,30 +1,53 @@
 import React, { useState } from 'react'
-import { Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text } from './SigninElements'
+import { Container, FormWrap, Icon, FormContent, 
+  Form, FormH1, FormLabel, FormInput, 
+  FormButton, Text, TextLink } from './SigninElements'
 
 async function loginUser(credentials) {
-    return fetch('http://localhost:8080/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(credentials)
-    })
-      .then(data => data.json())
-   }
+  const requestOptions = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(credentials),
+  };
+  return fetch('http://localhost:8080/login', requestOptions)
+  .then(handleResponse);
+}
+
+function handleResponse(response) {
+  return response.text().then(text => {
+      const data = text && JSON.parse(text);
+      if (!response.ok) {
+          if (response.status === 401) {
+              // auto logout if 401 response returned from api
+              logout();
+          }
+
+          const error = (data && data.message) || response.statusText;
+          return Promise.reject(error);
+      }
+
+      return data;
+  });
+}
+
+function logout() {
+  // remove user from local storage to log user out
+  localStorage.removeItem('token');
+}
 
 const SignIn = ( { setToken } ) => {
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
 
     const handleSubmit = async e => {
-        e.preventDefault();
-        const token = await loginUser({
-          username,
-          password
-        });
-        setToken(token);
-      }
-
+      e.preventDefault();
+      const token = await loginUser({
+        username,
+        password
+      });
+      setToken(token);
+    }
+    
     return (
         <>
             <Container>
@@ -38,8 +61,8 @@ const SignIn = ( { setToken } ) => {
                             <FormLabel htmlFor="for">Contraseña</FormLabel>
                             <FormInput type="password" required onChange={e => setPassword(e.target.value)}/>
                             <FormButton type="submit">Iniciar sesión</FormButton>
-                            <Text>¿Olvidaste tu contraseña?</Text>
-                            <Text>¿No tienes cuenta? Regístrate</Text>
+                            <TextLink>¿Olvidaste tu contraseña?</TextLink>
+                            <Text>¿No tienes cuenta? <TextLink to='/signup'>Regístrate</TextLink></Text>
                         </Form>
                     </FormContent>
                 </FormWrap>

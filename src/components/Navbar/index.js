@@ -88,6 +88,9 @@ const Navbar = ({ toggle }) => {
                     <NavBtn>
                         <NavBtnLink to='/signin'>Iniciar sesión</NavBtnLink>
                     </NavBtn>
+                    <NavBtn>
+                        <NavBtnLink to='/signup'>Regístrate</NavBtnLink>
+                    </NavBtn>
 
                 </NavbarContainer>
             </Nav>

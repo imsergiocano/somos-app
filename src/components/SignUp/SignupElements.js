@@ -96,7 +96,7 @@ export const FormButton = styled.button`
 
 export const Text = styled.span`
     text-align: center;
-    margin-top: 24px;
+    margin-top: 34px;
     color: #050505;
     font-size: 14px;
 `;
@@ -106,6 +106,7 @@ export const TextLink = styled(Link)`
     text-decoration: none;
     color: #010606; 
     font-size: 14px;
+
     &:hover {
         transition: all 0.2s ease-in-out;
         color: #6573FF;
