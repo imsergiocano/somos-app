@@ -85,7 +85,7 @@ export const NavLink = styled(LinkS)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid #6573FF;
+        border-bottom: 3px solid #2196f3;
     }
 `
 
@@ -98,20 +98,17 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkR)`
-    letter-spacing: 1.54px;
-    border-radius: 20px;
-    background: #6573FF;
-    white-space: nowrap;
-    padding: 10px 22px;
-    color: #fff;
-    font-size: 14px;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    color: #050505;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        color: #000;
+        color: #2196f3;
+        transition: 0.3s ease-out;
+
     }
 `

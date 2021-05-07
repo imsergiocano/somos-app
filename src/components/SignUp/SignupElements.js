@@ -85,7 +85,7 @@ export const FormInput = styled.input`
 `;
 
 export const FormButton = styled.button`
-    background: #6573FF;
+    background: #2196f3;
     padding: 16px 0;
     border: none;
     border-radius: 4px;
@@ -109,6 +109,6 @@ export const TextLink = styled(Link)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: #6573FF;
+        color: #2196f3;
     }
 `;

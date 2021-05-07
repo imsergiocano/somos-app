@@ -83,15 +83,14 @@ const Navbar = ({ toggle }) => {
                             offset={-80}  
                             >Regístrate</NavLink>
                         </NavItem>
-                        
-                    </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to='/signin'>Iniciar sesión</NavBtnLink>
-                    </NavBtn>
-                    <NavBtn>
+                        <NavItem>
+                            <NavBtnLink to='/signin'>Iniciar sesión
+                            </NavBtnLink>
+                        </NavItem>
+                        <NavItem>
                         <NavBtnLink to='/signup'>Regístrate</NavBtnLink>
-                    </NavBtn>
-
+                        </NavItem>
+                    </NavMenu>
                 </NavbarContainer>
             </Nav>
         </IconContext.Provider>

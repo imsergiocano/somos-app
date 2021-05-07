@@ -49,7 +49,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #6573FF;
+    color: #2196f3;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1.4px;
