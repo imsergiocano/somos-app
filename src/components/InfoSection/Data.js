@@ -8,7 +8,7 @@ export const homeObjOne = {
     lightText: false,
     lightTextDesc: false,
     topLine: 'Somos.',
-    headLine: 'Un grupo de entusiastas∫',
+    headLine: 'Un grupo de entusiastas',
     description: 'Apasionados que combina deporte con tecnología.',
     buttonLabel: 'Get started',
     imgStart: false,
