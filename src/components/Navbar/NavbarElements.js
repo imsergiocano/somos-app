@@ -14,7 +14,6 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
     }
@@ -27,20 +26,35 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 900px;
+    max-width: 1100px;
 `
 
 export const NavLogo = styled(LinkR)`
     color: #050505;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
     align-items: center;
 `
+export const ImgWrap = styled.div`
+    display: flex;
+    justify-content: space-between;
+    max-width: 40px;
+    height: 100%;
+    align-items: center;
+`
+
+export const Img = styled.img`
+    width: 100%;
+    margin: 0 0 0px 0;    
+    padding: 0px;
+    align-items: center;
+`;
+
 
 export const MobileIcon = styled.div`
     display: none;
@@ -71,7 +85,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     letter-spacing: 1.54px;
-    font-size: 15px;
+    font-size: 13px;
     height: 80px;
 `
 

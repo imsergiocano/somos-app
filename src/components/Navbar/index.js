@@ -11,8 +11,11 @@ import {
     NavItem, 
     NavLink, 
     NavBtn,
-    NavBtnLink
+    NavBtnLink,
+    ImgWrap,
+    Img
 } from './NavbarElements';
+import img from '../../images/logo80x80.png'
 
 const Navbar = ({ toggle }) => {
     
@@ -38,7 +41,11 @@ const Navbar = ({ toggle }) => {
         <IconContext.Provider value={{ color: '#050505'}}>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to='/' onClick={toggleHome}> somos.</NavLogo>
+                    <ImgWrap>
+                        <Img src={img}/>
+                        <NavLogo to='/' onClick={toggleHome}> somos.</NavLogo>
+                    </ImgWrap>
+                    
                     <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
